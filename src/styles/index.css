@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+}
+
+.activeLink {
+  @apply text-stone-400 w-[200px] hover:bg-stone-800 rounded-lg py-2 border;
+}
+
+.notActiveLink {
+  @apply w-[200px] hover:bg-stone-800 rounded-lg py-2 border;
+}
